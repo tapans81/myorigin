@@ -6,22 +6,7 @@
 			
 			console.log(b);
 				});
-		//return;
 		
-		
-	//	$(".show_history").on('click',function(){
-		// 	var pid=$(this).attr('id');
-		// 	console.log(pid);
-		// $.each(JSON.parse(mysdata),function(a,b){
-		// 	if(b[0].pid==pid)
-		// 	{
-		// 		$.each(b,function(c,d){
-		// 			console.log(d);
-
-		// 		});
-		// 	}
-		// 	break;
-		// 	});
 
 		var originalModal = $('#mymodal').clone();
 			$('body').on('show.bs.modal','#mymodal',  function(e){
@@ -54,7 +39,7 @@
 			     $('#mymodal').remove();
 			    var myClone = originalModal.clone();
 			    $('body').append(myClone);
-			    
+
 			});
 	});
 })(jQuery);

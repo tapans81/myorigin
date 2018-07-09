@@ -24,8 +24,8 @@ while (have_posts() ) {
 
 
 echo do_shortcode("[wpdm_package id='".get_the_ID()."']");
-echo "<button type='button' class='show_history' id='".get_the_ID()."' data-toggle='modal' data-target='#mymodal'>history</button>";
-echo get_the_ID();
+echo "<button type='button' class='btn btn-outline-success btn-sm show_history' id='".get_the_ID()."' data-toggle='modal' data-target='#mymodal' data-toggle='tooltip' data-placement='bottom' title='History'><i class='fas fa-history'></i></button>";
+//echo get_the_ID();
 $history=user_download_history(get_the_ID(),get_current_user_id());
 foreach ($history as $value) {
   $value->timestamp=date('Y-m-d H:i:s',$value->timestamp);
@@ -54,7 +54,7 @@ echo "</div></div>";
         
       </div> -->
       <div class="modal-body">
-        <p>File Downloads</p>
+        <p>Downloads</p>
        <table class="table">
         <thead>
           <tr>

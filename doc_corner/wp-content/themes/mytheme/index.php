@@ -5,11 +5,13 @@
 
 get_header();
 
+//echo do_shortcode('[wpdm_tree"]
+
+//');
 
 ?>
-
-
 <div class="row">
+
 	<div class="col-12">&nbsp;</div></div>
 	<div class="page-header">
   <h1>Categories</h1>
