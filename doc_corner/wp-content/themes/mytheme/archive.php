@@ -33,6 +33,7 @@ foreach ($history as $value) {
   //echo "<br>";
 }
 //die;
+
 array_push($histories, $history);
 
 //var_dump(count($history));
