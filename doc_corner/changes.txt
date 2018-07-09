@@ -1,0 +1,1 @@
+/var/www/html/doc_corner/wp-content/plugins/download-manager/tpls/link-templates/link-template-default.php

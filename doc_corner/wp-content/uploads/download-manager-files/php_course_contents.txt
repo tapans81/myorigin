@@ -1,0 +1,23 @@
+1.basics
+--------
+datatypes,variables,constants,conditions,looping
+
+2.arrays
+------
+creation,traversal,array functions
+
+3.oops
+------
+oops concepts
+classes,objects
+inheritance,polymorphism,abstract classes,interfaces
+
+4.exception handling
+-------------------
+handling exceptions,custom exceptions,multiple exceptions
+
+5.session management
+
+6.file handling
+
+7.connecting to mysql and executing queries using PDO
