@@ -16,16 +16,23 @@
 				pid=button.attr('id');
 				console.log(pid);
 			$.each(JSON.parse(mysdata),function(a,b){
-			if(b[0].pid==pid)
+		if(b.length>0){
+					if(b[0].pid==pid)
+					{
+						$.each(b,function(c,d){
+							// console.log(d);
+							// date=new Date(d.timestamp);
+
+							htm+='<tr><td>'+d.timestamp+'</td></tr>';
+
+						});
+						console.log(htm);
+						return false;
+					}
+			}
+			else 
 			{
-				$.each(b,function(c,d){
-					// console.log(d);
-					// date=new Date(d.timestamp);
-
-					htm+='<tr><td>'+d.timestamp+'</td></tr>';
-
-				});
-				console.log(htm);
+				htm+='<tr><td>No downloads!!</td></tr>';
 				return false;
 			}
 			

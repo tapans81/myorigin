@@ -27,12 +27,12 @@ echo do_shortcode("[wpdm_package id='".get_the_ID()."']");
 echo "<button type='button' class='btn btn-outline-success btn-sm show_history' id='".get_the_ID()."' data-toggle='modal' data-target='#mymodal' data-toggle='tooltip' data-placement='bottom' title='History'><i class='fas fa-history'></i></button>";
 //echo get_the_ID();
 $history=user_download_history(get_the_ID(),get_current_user_id());
+// var_dump(count($history));
+// var_dump($history);
 foreach ($history as $value) {
   $value->timestamp=date('Y-m-d H:i:s',$value->timestamp);
-  //print_r($value);
-  //echo "<br>";
+  
 }
-//die;
 
 array_push($histories, $history);
 

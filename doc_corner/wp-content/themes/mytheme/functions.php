@@ -200,8 +200,9 @@ function user_download_history($pid, $uid){
     $uid = (int)$uid;
     $pid = (int)$pid;
     $ret = $wpdb->get_results("select * from {$wpdb->prefix}ahm_download_stats where uid='$uid' and pid = '$pid'");
-    if($ret) return $ret;
-    return false;
+    // if($ret) return $ret;
+    // return false;
+    return $ret;
 }
 
 ?>
